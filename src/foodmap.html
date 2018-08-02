@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeVYHPAsAcf5qnAJ_ziTYoT85COoHLB_8&libraries=places"></script>
+ 
+ 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="" />
-  </head>
+  <title>FoodMap</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
 <body>
-    <h1>Food Maps</h1>
-    <button onclick="findUbication()">Ubiacion</button>
-    <div id="googlemaps"></div>
-    <script src="js/appMaps.js"></script>
+  <header id="header-title"></header>
+  <h1 id="text-tile">FoodMaps</h1>
+
+  </header>
+  <div id="googlemaps"></div>
+
+  <div class="slidecontainer">
+
+    <p>Selecciona la distancia :</p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <form action="#">
+
+    <div class="select-box">
+
+      <label for="select-box1" class="label select-box1">
+        <span class="label-desc">Rango de Busqueda </span>
+      </label>
+      <select id="select-food" class="select">
+        <option value="vegetariana">Comida Vegetariana</option>
+        <option value="china">Comida</option>
+        <option value="criolla">Neverland</option>
+      </select>
+    </div>
+    <div id="photoPlace">
+      
+    </div>
+
+    <div>
+
+    </div>
+  </form>
+
+
+
+
+
+  <script src="js/appMaps.js"></script>
+
+
 </body>
+
 </html>
-
-
-
-
-
-
