@@ -11,8 +11,8 @@ let rangeSearch = myRange.value;
 function mapsLocation(posicion) {
   positionMaps = posicion
   //Obtenermos las coordemadas
-  let maplatitud =  -12.1167 /* posicion.coords.latitude */;
-  let maplongitude = -77.0333/*  posicion.coords.longitude */;
+  let maplatitud =  /* -12.1167 */  posicion.coords.latitude ;
+  let maplongitude = /* -77.0333 */ posicion.coords.longitude ;
 
   let googleLatLon = new google.maps.LatLng(maplatitud, maplongitude); 
   let objConfig = {
