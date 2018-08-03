@@ -16,7 +16,7 @@ function mapsLocation(posicion) {
 
   let googleLatLon = new google.maps.LatLng(maplatitud, maplongitude); 
   let objConfig = {
-    zoom: 17,
+    zoom: 16,
     //center de aacuerdo una geolocalizacion
     center: googleLatLon
   }
