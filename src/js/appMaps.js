@@ -4,13 +4,9 @@ let positionMaps;
 let googleMaps;
 let mapGoogleOut = document.getElementById('googlemaps');
 let optionFood;
+let rangeSearch = myRange.value;
 
-//evento para buscar los tipos de comida
-selectFood.addEventListener("change", function() {
-  photoPlace.innerHTML = '';
-  optionFood =selectFood.value;
-  mapsLocation(positionMaps);
-});
+
 
 function mapsLocation(posicion) {
   positionMaps = posicion
@@ -87,8 +83,20 @@ function createPhotoMarker(place) {
   } 
   let photoplace = photos[0].getUrl({ 'maxWidth': 160, 'maxHeight': 160 })
   photoPlace.innerHTML += ` <div class="photoRestaurant"> 
-  <img  class="photoRestaurant" src="${photoplace}">  
+  <img  class="photoRestaurants" src="${photoplace}">  
   <p>${place.name}</p>
   </div>`;
 }
 
+////evento para buscar los tipos de comida
+selectFood.addEventListener("change", function() {
+  photoPlace.innerHTML = '';
+  optionFood =selectFood.value;
+  mapsLocation(positionMaps);
+});
+
+myRange.addEventListener("change", function (ev) {
+  photoPlace.innerHTML = '';
+  rangeSearch = ev.currentTarget.value
+  mapsLocation(positionMaps);
+}, true);

@@ -101,13 +101,34 @@ body{
       cursor: pointer;
   }
 
+  /* .photoRestaurant{
+    height: 140px;
+     width: 140px;
+     cursor: pointer;
+     
+    } */
+#photoPlace {
+  text-align: center;
+
+  -webkit-column-count: 2;
+    -moz-column-gap: 2em;/*
+   -moz-column-rule: 1px solid #ccf;
+  
+   -webkit-column-gap: 2em;
+   -webkit-column-rule: 1px solid #ccf; */
+ 
+} 
+
+
+.photoRestaurants{
+
+  border-radius: 5px;
+}
  @media only screen and (max-width: 600px) {
   body {
    background-color: #fff;
   }
-img{
 
-}
  
   #googlemaps{
     width: 300px;  
