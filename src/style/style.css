@@ -134,6 +134,10 @@ body{
     -webkit-column-count: 2;
     -moz-column-gap: 2em;   
   }
+
+  #selectFood{
+    font-size: 20px;
+  }
   #googlemaps{
     width: 300px;  
     height: 300px;

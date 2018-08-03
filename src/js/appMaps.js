@@ -32,7 +32,7 @@ function mapsLocation(posicion) {
   }
   let request = {
     location: googleLatLon,
-    radius: '500', /* range */
+    radius: rangeSearch, 
     type: ['restaurant'],
     keyword: optionFood, 
   }
