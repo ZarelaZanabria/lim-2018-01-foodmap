@@ -2,46 +2,42 @@
 <html>
 
 <head>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABai3JDN21ddXf2TwGnUNXQ-MdFo38lAM&libraries=places"></script> 
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZpNI0pTvu5kmRjyNY7pjhAmTueRVI7hE&libraries=places">
+
+  </script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>FoodMap</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- 
+
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <header id="header-title"></header>
   <h1 id="text-tile">FoodMaps</h1>
-
   </header>
   <div id="googlemaps"></div>
-  <!-- <div></div> -->
-
   <div class="slidecontainer">
     <p>Rango de 40m a 80Km</p>
     <input type="range" min="40" max="80000" value="50" class="slider" id="myRange">
   </div>
+  <label for="select-box1" class="label select-box1">
+    <span class="label-desc">Buscar por </span>
+  </label>
+  <select id="selectFood" class="selectFood">
+    <option value="vegetarianos">Vegetariano</option>
+    <option value="criollos">Criolla</option>
+    <option value="chino">China</option>
+    <option value="polleria">Pollo</option>
+    <option value="cevicheria">Cevicherias</option>
+    <option selected value="restaurantes">Todos</option>
+  </select>
+  <div id="photoPlace">
+  </div>
+  <div>
+  </div>
 
-   
-      <label for="select-box1" class="label select-box1">
-        <span class="label-desc">Buscar por  </span>
-      </label>
-      <select id="selectFood" class="selectFood">
-        <option value="vegetarianos">Vegetariano</option>
-        <option value="criollos">Criolla</option>
-        <option value="chino">China</option>
-        <option value="polleria">Pollo</option>
-        <option value="cevicheria">Cevicherias</option>
-        <option selected value="restaurantes">Todos</option>
-      </select>
-    
-    <div id="photoPlace">      
-    </div>
-    <div>
-    </div>
- 
   <script src="js/appMaps.js"></script>
 
 </body>

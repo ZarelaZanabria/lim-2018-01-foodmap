@@ -1,11 +1,11 @@
-window.onload=timeout;
-function timeout(){
-window.setTimeout("redirect()",2000)}
+window.onload = timeout;
+function timeout() {
+    window.setTimeout("redirect()", 2000)
+}
+function redirect() {
+    window.location = "foodmap.html"
+}
 
-function redirect(){
-window.location="foodmap.html"
-return}
 
 
 
- 
