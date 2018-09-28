@@ -4,7 +4,7 @@ window.setTimeout("redirect()",2000)}
 
 function redirect(){
 window.location="foodmap.html"
-return}
+}
 
 
 
