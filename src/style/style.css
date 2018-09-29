@@ -6,27 +6,34 @@ body{
   margin: 0; 
   padding: 0; 
   font-family: monospace; 
+  background-image: url("http://subirimagen.me/uploads/20180929122558.jpg") ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   
 }
+ 
+#logo{
+position:fixed;
+width:300px;
+height:300px;
+left:50%;
+top:50%;
+margin-left:-150px;
+margin-top:-100px;
+}
 
-.logoTitle{
+#logoTitle{
   text-align: center;
-  color : azure;
+  color : #fff;
   position: center;
-  font-size: 70px;
+  font-size: 100px;
   margin-left: 10px;
   margin-top: 150px;
   text-shadow: -1px 4px 4px #000; 
 }
- #logo{
-  position:fixed;
-  width:300px;
-  height:300px;
-  left:50%;
-  top:40%;
-  margin-left:-150px;
-  margin-top:-100px;
-  } 
+ 
 
   #googlemaps{
     width: 800px;  
@@ -124,9 +131,20 @@ body{
 
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("http://subirimagen.me/uploads/20180929122558.jpg");
+  }
+}
  @media only screen and (max-width: 600px) {
   body {
-   background-color: #fff;
+    background-image: url("http://subirimagen.me/uploads/20180929122558.jpg");
+  }
+  #logoTitle{
+ 
+    font-size: 70px;
+  
   }
 
   #photoPlace {
