@@ -17,7 +17,7 @@ function mapsLocation(posicion) {
   let googleLatLon = new google.maps.LatLng(maplatitud, maplongitude); 
   let objConfig = {
     zoom: 16,
-    //center de aacuerdo una geolocalizacion
+    //center de acuerdo una geolocalizacion
     center: googleLatLon
   }
 
@@ -82,8 +82,8 @@ function createPhotoMarker(place) {
     return;
   } 
   let photoplace = photos[0].getUrl({ 'maxWidth': 160, 'maxHeight': 160 })
-  photoPlace.innerHTML += ` <div class="photoRestaurant"> 
-  <img  class="photoRestaurants" src="${photoplace}">  
+  photoPlace.innerHTML += ` <div class="col-sm"> 
+  <img  class="img-thumbnail" src="${photoplace}">  
   <p>${place.name}</p>
   </div>`;
 }

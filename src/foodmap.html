@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
- <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZpNI0pTvu5kmRjyNY7pjhAmTueRVI7hE&libraries=places">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZpNI0pTvu5kmRjyNY7pjhAmTueRVI7hE&libraries=places">
 
-  </script> -->
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>FoodMap</title>
@@ -17,23 +21,47 @@
   <header id="header-title"></header>
   <h1 id="text-tile">FoodMaps</h1>
   </header>
-  <div id="googlemaps"></div>
-  <div class="slidecontainer">
+  
+  <div id="googlemaps" class="rounded mx-auto d-block"> </div>
+
+
+  <form>
+      <div class="form-group">
+        <label for="formControlRange">Selecciona la distanacia </label>
+        <input type="range" class="form-control-range" id="myRange" min="900" max="80000" value="50">
+      </div>
+    </form>
+
+
+<!--   <div class="slidecontainer">
     <p>Rango de 40m a 80Km</p>
     <input type="range" min="900" max="80000" value="50" class="slider" id="myRange">
-  </div>
+  </div> -->
   <label for="select-box1" class="label select-box1">
     <span class="label-desc">Buscar por </span>
   </label>
-  <select id="selectFood" class="selectFood">
+  <div class="form-group">
+    <label for="sel1"> Seleccionar la lista : </label>
+    <select  class="form-control" id="selectFood" name="sellist1">
+      <option value="vegetarianos">Vegetariano</option>
+      <option value="criollos">Criolla</option>
+      <option value="chino">China</option>
+      <option value="polleria">Pollo</option>
+      <option value="cevicheria">Cevicherias</option>
+      <option selected value="restaurantes">Todos</option>
+
+    </select>
+
+  </div>
+<!--   <select  class="selectFood">
     <option value="vegetarianos">Vegetariano</option>
     <option value="criollos">Criolla</option>
     <option value="chino">China</option>
     <option value="polleria">Pollo</option>
     <option value="cevicheria">Cevicherias</option>
     <option selected value="restaurantes">Todos</option>
-  </select>
-  <div id="photoPlace">
+  </select> -->
+  <div id="photoPlace" class="row" >
   </div>
   <div>
   </div>
